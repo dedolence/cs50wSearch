@@ -143,8 +143,23 @@ html, body {
 
 a, button {
     cursor: pointer;
+    color: #222;
+    text-decoration: none;
 }
 
 a:hover, button:hover {
     text-decoration: underline;
+}
+
+#imagesLogoDiv {
+    background: url("../images/imagesLogo.png") no-repeat;
+}
+
+#imagesSubtext {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: relative;
+    left: 215px;
+    top: 76px;
+    white-space: nowrap;
 }
