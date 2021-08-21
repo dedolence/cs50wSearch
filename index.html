@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+    - 3 pages: search, image search, advanced search
+    - Rounded query input text field; button that says "Google Search," both centered to page width
+    - Ditto for image search
+    - on advanced search: follow Google's page, allowing to Find Pages With... "all these words", "this exact word of phrase", "any of these words", "none of these words"
+    - stack those options vertically, left aligned, matching CSS (blue with white text)
+    - Appearance should match Google (boo)
+    - I'm Feeling Lucky button 
+    
+    Google's structure seems to be a flexbox that contains the entire page with full-width items stacked vertically.
+    Outside flexbox container
+        -> header (with links to google suite and account info)
+        -> the Google logo
+        -> the search form
+        -> blank filler space
+        -> footer div
+-->
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="containerDiv">
+            <div id="headerDiv" class="hfRow">
+                <span class="hfItem"><a>About</a></span>
+                <span class="hfItem"><a>Store</a></span>
+                <span class="hfItem spacer">&nbsp;</span>
+                <span class="hfItem"><a>Gmail</a></span>
+                <span class="hfItem"><a>Images</a></span>
+                <span class="hfItem dots">
+                    <svg focusable="false" viewBox="0 0 24 24">
+                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    </svg>
+                </span>
+                <span class="hfItem"><a>Account</a></span>
+            </div>
+            <div id="logoDiv" class="row">
+                <img src="images/logo.png">
+            </div>
+            <div id="formDiv" class="row">
+                <form action="https://google.com/search">
+                    <div id="textFieldContainer">
+                        <div id="searchIconDiv">
+                            <span id="searchIcon">
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div id="queryFieldDiv">
+                            <input type="text" name="q" id="queryField" autocomplete="off" autocorrect="off" value="">
+                        </div>
+                        <div></div>
+                    </div>
+                    <div id="submitButtonDiv">
+                        <input type="submit" value="Google Search" class="submitButton">
+                        <input type="submit" value="I'm Feeling Lucky" class="submitButton">
+                    </div>
+                </form>
+            </div>
+            <div id="spacerDiv" class="row spacer"></div>
+            <div id="footerDiv" class="hfRow">
+                <div id="footerLeft" class="footerThird">
+                    <span class="hfItem"><a>Advertising</a></span>
+                    <span class="hfItem"><a>Business</a></span>
+                    <span class="hfItem"><a>How Search Works</a></span>
+                </div>
+                <div id="footerCenter" class="footerThird">
+                    <span class="hfItem spacer">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="leafIcon" alt="" data-iml="1629348148562" data-atf="1" data-frt="0">
+                        <a>Carbon Neutral since 2007</a></span>
+                </div>
+                <div id="footerRight" class="footerThird">
+                    <span class="hfItem"><a>Privacy</a></span>
+                    <span class="hfItem"><a>Terms</a></span>
+                    <span class="hfItem"><button class="settingsButton">Settings</button></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<script>
+    let e = document.getElementById("footerRight");
+</script>
