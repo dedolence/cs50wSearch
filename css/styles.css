@@ -63,6 +63,11 @@ html, body {
     flex-direction: row;
     align-items: center;
     padding: 0px 14px;
+    width: 544px;
+}
+
+#textFieldContainer:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 #searchIconDiv {
@@ -75,12 +80,12 @@ html, body {
 }
 
 #queryFieldDiv {
-    width: 584px; 
     flex: 1;
 }
 
 #queryField {
     height: 34px;
+    width: 100%;
     background-color: transparent;
     outline: none;
     border: none;
@@ -117,10 +122,6 @@ html, body {
     color: #202124;
 }
 
-#textFieldContainer:hover {
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
 #footerDiv {
     display: flex;
     justify-content: space-between;
@@ -151,6 +152,8 @@ a:hover, button:hover {
     text-decoration: underline;
 }
 
+/* IMAGE SEARCH */
+
 #imagesLogoDiv {
     background: url("../images/imagesLogo.png") no-repeat;
 }
@@ -162,4 +165,37 @@ a:hover, button:hover {
     left: 215px;
     top: 76px;
     white-space: nowrap;
+}
+
+#cameraIconContainer {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+#cameraIconDiv {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+#cameraIconSpan {
+    height: 24px;
+    width: 24px;
+    background: url("../images/cameraIcon.png") 0 0 no-repeat;
+    background-size: 24px;
+}
+
+#searchIconButton {
+    padding-right: 13px;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+#searchIconButtonSpan {
+    fill: #4285fa;
 }

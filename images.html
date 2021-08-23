@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<!--
-    - 3 pages: search, image search, advanced search
-    - Rounded query input text field; button that says "Google Search," both centered to page width
-    - Ditto for image search
-    - on advanced search: follow Google's page, allowing to Find Pages With... "all these words", "this exact word of phrase", "any of these words", "none of these words"
-    - stack those options vertically, left aligned, matching CSS (blue with white text)
-    - Appearance should match Google (boo)
-    - I'm Feeling Lucky button 
-    
-    Google's structure seems to be a flexbox that contains the entire page with full-width items stacked vertically.
-    Outside flexbox container
-        -> header (with links to google suite and account info)
-        -> the Google logo
-        -> the search form
-        -> blank filler space
-        -> footer div
--->
 <html lang="en">
     <head>
         <title>Search</title>
         <link href="css/styles.css" rel="stylesheet">
+        <meta charset="UTF8">
     </head>
     <body>
+        <!--
+            - 3 pages: search, image search, advanced search
+            - Rounded query input text field; button that says "Google Search," both centered to page width
+            - Ditto for image search
+            - on advanced search: follow Google's page, allowing to Find Pages With... "all these words", "this exact word of phrase", "any of these words", "none of these words"
+            - stack those options vertically, left aligned, matching CSS (blue with white text)
+            - Appearance should match Google (boo)
+            - I'm Feeling Lucky button 
+            
+            Google's structure seems to be a flexbox that contains the entire page with full-width items stacked vertically.
+            Outside flexbox container
+                -> header (with links to google suite and account info)
+                -> the Google logo
+                -> the search form
+                -> blank filler space
+                -> footer div
+        -->
         <div id="containerDiv">
             <div id="headerDiv" class="hfRow">
                 <span class="hfItem"><a></a></span>
@@ -39,7 +40,7 @@
             <div id="logoDiv" style="padding-top: 109px;">
                 <div id="imagesLogoDiv" class="row" style="background-size: 272px 92px; height: 92px; width: 272px;">
                     <div id="imagesSubtext">
-                        <span>Images</span>
+                        <span>images</span>
                     </div>
                 </div>
             </div>
@@ -57,14 +58,19 @@
                             <input type="text" name="q" id="queryField" autocomplete="off" autocorrect="off" value="">
                         </div>
                         <div class="cameraIconContainer">
-                            <div class="cameraIconDiv">
-                                <span class="cameraIconSpan"></span>
+                            <div id="cameraIconDiv">
+                                <span id="cameraIconSpan"></span>
                             </div>
                         </div>
+                        <button id="searchIconButton">
+                            <span id="searchIconButtonSpan">
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                     <div id="submitButtonDiv">
-                        <input type="submit" value="Google Search" class="submitButton">
-                        <input type="submit" value="I'm Feeling Lucky" class="submitButton">
                     </div>
                 </form>
             </div>
