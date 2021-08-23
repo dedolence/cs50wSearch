@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <link rel="stylesheet" href="css/advanced.css">
+        <title>Google Advanced Search</title>
+    </head>
+    <body>
+        <header id="headerDiv">
+            <div id="headerLogoDiv">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="74" height="24" viewBox="0 0 74 24">
+                        <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"/><path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"/><path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"/><path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"/><path fill="#34A853" d="M58 .24h2.51v17.57H58z"/><path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"/>
+                    </svg>
+                </a>
+            </div>
+            <div id="headerAccountDiv">
+                <div id="gridDiv">
+                    <svg focusable="false" viewBox="0 0 24 24">
+                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    </svg>
+                </div>
+                <div id="imagesLinkDiv">
+                    <span>Images</span>
+                </div>
+            </div>
+        </header>
+        <div id="titleDiv">
+            <label>Advanced Search</label>
+        </div>
+        <div class="dividerDiv"></div>
+        <div id="bodyDiv">
+            <form action="http://www.google.com/search" id="form" method="GET" name="f">
+                <div id="headerRow" class="formRow">
+                    <div class="labelColumn">
+                        Find pages with...
+                    </div>
+                    <div class="labelColumn">&nbsp;</div>
+                    <div class="labelColumn">
+                        To do this in the search box.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        all these words:
+                    </div>
+                    <div class="inputColumn">
+                        <input type="text">
+                    </div>
+                    <div class="helperColumn">
+                        Type the important words: tri-colour rat terrier
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        this exact word or phrase:
+                    </div>
+                    <div class="inputColumn">
+                        <input type="text">
+                    </div>
+                    <div class="helperColumn">
+                        Put exact words in quotes: "rat terrier"
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        any of these words:
+                    </div>
+                    <div class="inputColumn">
+                        <input type="text">
+                    </div>
+                    <div class="helperColumn">
+                        Type OR between all the words you want: miniature OR standard
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        none of these words:
+                    </div>
+                    <div class="inputColumn">
+                        <input type="text">
+                    </div>
+                    <div class="helperColumn">
+                        Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        numbers ranging from:
+                    </div>
+                    <div class="inputColumn">
+                        <input type="text"> to <input type="text">
+                    </div>
+                    <div class="helperColumn">
+                        Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
+                    </div>
+                </div>
+                <div class="dividerDiv"></div>
+                <div id="headerRow" class="formRow">
+                    <div class="labelColumn">
+                        Then narrow your results by...
+                    </div>
+                    <div class="labelColumn">&nbsp;</div>
+                    <div class="labelColumn">&nbsp;</div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        language:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>any language</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Find pages in the language that you select.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        region:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>any region</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Find pages published in a particular region.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        last update:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>anytime</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Find pages updated within the time that you specify.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        site or domain:
+                    </div>
+                    <div class="inputColumn">
+                        <input type="text">
+                    </div>
+                    <div class="helperColumn">
+                        Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        terms appearing:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>anywhere in the page</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Search for terms in the whole page, page title or web address, or links to the page you're looking for.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        Safesearch:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>Show explicit results</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Tell SafeSearch whether to filter sexually explicit content.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        file type:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>any format</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Find pages in the format that you prefer.
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="labelColumn">
+                        usage rights:
+                    </div>
+                    <div class="inputColumn">
+                        <select>
+                            <option>not filtered by license</option>
+                        </select>
+                    </div>
+                    <div class="helperColumn">
+                        Find pages that you are free to use yourself.
+                    </div>
+                </div>
+            </form>
+            <div id="hintsDiv"></div>
+        </div>
+    </body>
+</html>
