@@ -1,0 +1,12 @@
+My goal with the Google search clone was to try to clean up some of the original source code while maintaining an accurate visual resemblance. 
+It has unfortunately not been optimized to be responsive, and has only been tested on a 1080p monitor using the latest version of Firefox.
+Regardless, I'm proud of how similar my pages turned out.
+For this project, I wasn't trying to avoid directly copying from the source, although I only used copy & paste for some of the longer more tedious elements,
+like the SVG logos. Much like how fine artists train by duplicating famous works, I looked at this as an exercise in learning by reproducing.
+However, I do believe that most modern websites are needlessly complicated, even relatively simple sites like Google.
+A lot of that complexity is justified by adding polyfill for older browsers and ensuring it is responsive to different screen sizes.
+However, often, containers get stacked on containers when it's really not necessary, so I tried to keep the DOM as flat as possible.
+I did skip some of the fancier engineering, such as the scrolling "I'm Feeling Lucky" button and the dropdown selections that are populated by
+Javascript instead of the <select> and <option> elements. I did include some visual touches, like the blue outline on focused elements.
+The basic functionality is preserved by including a few hidden form elements; I'm pretty sure in the source page those elements are added by a script
+because I couldn't find an equivalent element anywhere in the source code.
