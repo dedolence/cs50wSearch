@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -35,6 +36,10 @@ body {
     color: #5f6368;
 }
 
+#headerAccountDiv span {
+    padding-left: 20px;
+}
+
 #gridDiv {
     width: 40px;
     height: 40px;
@@ -54,6 +59,9 @@ body {
 
 #bodyDiv {
     margin: 40px 2% 0 45px;
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
 }
 
 #form {
@@ -62,6 +70,155 @@ body {
 }
 
 .formRow {
-    display: flex;
+    display: table;
     flex-direction: row;
+    width: 100%;
+}
+
+.labelColumn {
+    min-width: 137px;
+    width: 16%;
+    height: 42px;
+    font-size: 13px;
+    color: #222;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 18px;
+}
+
+.inputColumn {
+    min-width: 167px;
+    width: 50%;
+    min-height: 41px;
+    padding-right: 16px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inputColumn input[type="text"] {
+    width: 100%;
+    text-align: left;
+    border-radius: 1px;
+    border: 1pt solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+}
+
+.inputColumn input[type="text"]:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+.helperColumn {
+    width: 32%;
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 160px;
+    margin: 0px 0px 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+}
+
+.labelColumnHeader {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.helperColumnHeader {
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+    padding-left: 5px;
+}
+
+#rangeInputContainer {
+    display: table;
+    width: 100%;
+}
+
+.rangeCell {
+    display: table-cell;
+}
+
+.rangeCell:nth-child(even) {
+    width: 40px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-align: center;
+    font-size: 13px;
+    color: #202124;
+}
+
+.monotype {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
+}
+
+a:visited {
+    color: #12c;
+}
+
+.inputColumn select {
+    width: 100%;
+    height: 27px;
+    text-indent: 4px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 27px;
+    list-style: none;
+    outline: none;
+}
+
+.inputColumn select:focus {
+    border-color: #4d90fe;
+}
+
+#submitButton {
+    float: right;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    outline: 0;
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    padding: 0px 12px;
+    margin: 10px 0px;
+    height: 30px !important;
+}
+
+#linksDiv {
+    padding-bottom: 18px;
+}
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    line-height: 40px;
+    padding-bottom: 18px;
+    font-size: 14px;
+}
+
+#footerLinksContainer {
+    margin-left: 45px;
+}
+
+footer div {
+    padding-right: 27px;
+    color: #70757a;
+    display: inline-block;
 }

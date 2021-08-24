@@ -20,8 +20,11 @@
                         <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
                     </svg>
                 </div>
+                <div>
+                    <span><a href="index.html">Google Search</a></span>
+                </div>
                 <div id="imagesLinkDiv">
-                    <span>Images</span>
+                    <span><a href="images.html">Images</a></span>
                 </div>
             </div>
         </header>
@@ -32,11 +35,11 @@
         <div id="bodyDiv">
             <form action="http://www.google.com/search" id="form" method="GET" name="f">
                 <div id="headerRow" class="formRow">
-                    <div class="labelColumn">
+                    <div class="labelColumn labelColumnHeader">
                         Find pages with...
                     </div>
-                    <div class="labelColumn">&nbsp;</div>
-                    <div class="labelColumn">
+                    <div class="inputColumn">&nbsp;</div>
+                    <div class="helperColumn helperColumnHeader">
                         To do this in the search box.
                     </div>
                 </div>
@@ -45,10 +48,10 @@
                         all these words:
                     </div>
                     <div class="inputColumn">
-                        <input type="text">
+                        <input type="text" name="as_q">
                     </div>
                     <div class="helperColumn">
-                        Type the important words: tri-colour rat terrier
+                        Type the important words: <span class="monotype">tri-colour rat terrier</span>
                     </div>
                 </div>
                 <div class="formRow">
@@ -56,10 +59,10 @@
                         this exact word or phrase:
                     </div>
                     <div class="inputColumn">
-                        <input type="text">
+                        <input type="text" name="as_eqp">
                     </div>
                     <div class="helperColumn">
-                        Put exact words in quotes: "rat terrier"
+                        Put exact words in quotes: <span class="monotype">"rat terrier"</span>
                     </div>
                 </div>
                 <div class="formRow">
@@ -67,10 +70,10 @@
                         any of these words:
                     </div>
                     <div class="inputColumn">
-                        <input type="text">
+                        <input type="text" name="as_oq">
                     </div>
                     <div class="helperColumn">
-                        Type OR between all the words you want: miniature OR standard
+                        Type OR between all the words you want: <span class="monotype">miniature OR standard</span>
                     </div>
                 </div>
                 <div class="formRow">
@@ -78,10 +81,10 @@
                         none of these words:
                     </div>
                     <div class="inputColumn">
-                        <input type="text">
+                        <input type="text" name="as_eq">
                     </div>
                     <div class="helperColumn">
-                        Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                        Put a minus sign just before words that you don't want: <span class="monotype">-rodent, -"Jack Russell"</span>
                     </div>
                 </div>
                 <div class="formRow">
@@ -89,26 +92,36 @@
                         numbers ranging from:
                     </div>
                     <div class="inputColumn">
-                        <input type="text"> to <input type="text">
+                        <div id="rangeInputContainer">
+                            <div class="rangeCell">
+                                <input type="text">
+                            </div>
+                            <div class="rangeCell">
+                                to
+                            </div>
+                            <div class="rangeCell">
+                                <input type="text">
+                            </div>
+                        </div>
                     </div>
                     <div class="helperColumn">
-                        Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
+                        Put two full stops between the numbers and add a unit of measurement: <span class="monotype">10..35 kg, £300..£500, 2010..2011</span>
                     </div>
                 </div>
-                <div class="dividerDiv"></div>
+                <div class="dividerDiv" style="margin: 18px 0px;"></div>
                 <div id="headerRow" class="formRow">
-                    <div class="labelColumn">
+                    <div class="labelColumn labelColumnHeader">
                         Then narrow your results by...
                     </div>
-                    <div class="labelColumn">&nbsp;</div>
-                    <div class="labelColumn">&nbsp;</div>
+                    <div class="inputColumn">&nbsp;</div>
+                    <div class="helperColumn">&nbsp;</div>
                 </div>
                 <div class="formRow">
                     <div class="labelColumn">
-                        language:
+                        <label for="languageSelect">language:</label>
                     </div>
                     <div class="inputColumn">
-                        <select>
+                        <select id="languageSelect">
                             <option>any language</option>
                         </select>
                     </div>
@@ -150,7 +163,7 @@
                         <input type="text">
                     </div>
                     <div class="helperColumn">
-                        Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov
+                        Search one site (like <span class="monotype">wikipedia.org</span> ) or limit your results to a domain like <span class="monotype">.edu</span>, <span class="monotype">.org</span> or <span class="monotype">.gov</span>
                     </div>
                 </div>
                 <div class="formRow">
@@ -168,7 +181,7 @@
                 </div>
                 <div class="formRow">
                     <div class="labelColumn">
-                        Safesearch:
+                        <a href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=en">SafeSearch</a>:
                     </div>
                     <div class="inputColumn">
                         <select>
@@ -176,7 +189,7 @@
                         </select>
                     </div>
                     <div class="helperColumn">
-                        Tell SafeSearch whether to filter sexually explicit content.
+                        Tell <a href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=en">SafeSearch</a> whether to filter sexually explicit content.
                     </div>
                 </div>
                 <div class="formRow">
@@ -194,7 +207,7 @@
                 </div>
                 <div class="formRow">
                     <div class="labelColumn">
-                        usage rights:
+                        <a href="https://support.google.com/websearch?p=ws_images_usagerights&amp;hl=en">usage rights</a>:
                     </div>
                     <div class="inputColumn">
                         <select>
@@ -205,8 +218,33 @@
                         Find pages that you are free to use yourself.
                     </div>
                 </div>
+                <div class="formRow">
+                    <div class="labelColumn">&nbsp;</div>
+                    <div class="inputColumn">
+                        <input type="submit" value="Advanced Search" id="submitButton">
+                    </div>
+                    <div class="helperColumn">&nbsp;</div>
+                </div>
             </form>
-            <div id="hintsDiv"></div>
+            <div class="dividerDiv" style="margin: 18px 0px;"></div>
+            <div class="formRow">
+                <div class="labelColumn labelColumnHeader">You can also...</div>
+                <div class="inputColumn">&nbsp;</div>
+                <div class="helperColumn">&nbsp;</div>
+            </div>
+            <div id="linksDiv" class="labelColumn">
+                <div style="clear:both"><a href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=en">Find pages that are similar to a URL</a></div>
+                <div><a href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=en">Search pages that you've visited</a></div>
+                <div><a href="https://support.google.com/websearch?p=adv_operators&amp;hl=en">Use operators in the search box</a></div>
+                <div><a href="/preferences?hl=en-NL">Customise your search settings</a></div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="footerLinksContainer">
+            <div>Help</div>
+            <div>Terms</div>
+            <div>Privacy</div>
         </div>
     </body>
 </html>
