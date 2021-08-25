@@ -1,3 +1,4 @@
+My name is Nathaniel Hoyt and this is project 0 for CS50's Web Programming with Python and Javascript.
 My goal with the Google search clone was to try to clean up some of the original source code while maintaining an accurate visual resemblance. 
 It has unfortunately not been optimized to be responsive, and has only been tested on a 1080p monitor using the latest version of Firefox.
 Regardless, I'm proud of how similar my pages turned out.
