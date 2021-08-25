@@ -199,3 +199,9 @@ a:hover, button:hover {
 #searchIconButtonSpan {
     fill: #4285fa;
 }
+
+#leadIcon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
