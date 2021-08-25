@@ -179,13 +179,6 @@ a:hover, button:hover {
     padding: 0px 8px;
 }
 
-#cameraIconSpan {
-    height: 24px;
-    width: 24px;
-    background: url("../images/cameraIcon.png") 0 0 no-repeat;
-    background-size: 24px;
-}
-
 #searchIconButton {
     padding-right: 13px;
     height: 44px;
